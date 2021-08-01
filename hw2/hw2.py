@@ -1,0 +1,5 @@
+print("Enter the line for duplicate removing:")
+line = input()
+words = line.split()
+uniquewords = sorted(set(words), key=lambda w: words.index(w))
+print(" ".join(uniquewords))
