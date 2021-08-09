@@ -9,5 +9,4 @@ line = input()
 words = line.split()
 # set не сохранит исходный порядок, поэтому используем sorted для его восстановления 
 uniquewords = sorted(set(words), key = lambda word: words.index(word))
-print(type(uniquewords))
 print(" ".join(uniquewords))
