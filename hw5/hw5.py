@@ -10,11 +10,9 @@ numbersarray = [int(n) for n in userinput.split()]
 numbersset = set(numbersarray)
 # Предположим, что в множестве чисел пропущена единица 
 missingnumbers = set([1])
+# Минимальным пропущеным может быть число на единицу больше текущего 
+missingnumbers = missingnumbers | set([i + 1 for i in numbersset])
 # Если число содержится в изначальном множестве, то оно не пропущено
-# Тогда минимальным пропущеным может быть число на единицу больше текущего 
-for i in numbersset:
-    if i in missingnumbers:
-        missingnumbers.remove(i)
-        missingnumbers.add(i + 1)
+missingnumbers = missingnumbers - numbersset
 minimalmissingnumber = min(missingnumbers)
 print(minimalmissingnumber)
