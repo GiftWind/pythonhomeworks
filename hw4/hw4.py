@@ -5,5 +5,5 @@
 import re
 print("Введите набор целых неотрицательных чисел для суммирования:")
 userinput = input()
-numberslist = [int(n) for n in re.findall('\d+', userinput)]
+numberslist = [int(n) for n in re.findall('-?\d+', userinput)]
 print(sum(numberslist))
