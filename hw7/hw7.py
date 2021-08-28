@@ -8,7 +8,7 @@
 # состоящих в этих группах.
 # ( root:1, sudo:1001,1002,1003, ...)
 
-passwd = open('passwd', 'r')
+passwd = open('hw07/passwd', 'r')
 groups = open('group', 'r')
 output = open('output.txt', 'w')
 
