@@ -1,0 +1,75 @@
+/bin/bash - 10
+/usr/sbin/nologin - 28
+/bin/sync - 1
+/bin/false - 3
+/bin/sh - 1
+/sbin/nologin - 1
+
+root: 0
+daemon: 1 110
+bin: 2
+sys: 3
+adm: 104 1000
+tty: 104
+disk: 
+lp: 7
+mail: 8
+news: 9
+uucp: 10
+man: 6
+proxy: 13
+kmem: 
+dialout: 
+fax: 
+voice: 
+cdrom: 1000
+floppy: 
+tape: 
+sudo: 1000 1008
+audio: 
+dip: 1000
+www-data: 33
+backup: 34
+operator: 
+list: 38
+irc: 39
+src: 
+gnats: 41
+shadow: 
+utmp: 
+video: 
+sasl: 
+plugdev: 1000 111
+staff: 
+games: 5
+users: 998
+nogroup: 4 65534 105 112
+systemd-journal: 
+systemd-network: 100
+systemd-resolve: 101
+systemd-timesync: 102
+crontab: 
+messagebus: 103
+input: 
+kvm: 
+render: 
+syslog: 104
+tss: 106
+uuidd: 107
+tcpdump: 108
+ssh: 
+landscape: 109
+lxd: 1000
+systemd-coredump: 999
+giftwind: 1000
+markus: 1001
+ross: 1002
+monica: 1003
+joey: 1004
+rachel: 1005
+phoebe: 1006
+chandler: 1007
+ftp-admin: 1008
+stranger: 1009
+vasya: 1010
+ftp-user: 1005 1003 1006 1004 1002 1007
