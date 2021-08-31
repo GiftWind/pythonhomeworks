@@ -1,8 +1,8 @@
-from Employee import Employee
+import Employee
 import pickle
 
-f = open('alice', 'rb')
-alice = pickle.load(f)
-f.close()
+with open('alice', 'rb') as f:
+    alice = pickle.load(f)
 
 alice.print_salary_info()
+print(alice.phone)

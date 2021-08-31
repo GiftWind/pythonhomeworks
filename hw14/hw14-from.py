@@ -7,7 +7,9 @@ import pickle
 from Employee import Employee
 
 alice = Employee('Alice Wonderland', '+7(999)999-9999', 19999)
-f = open('alice', 'wb')
-pickle.dump(alice, f)
-f.close()
+with open('alice', 'wb') as f:
+    # Протокол 3 используется по умолчанию, но лучше указывать явно 
+    pickle.dump(alice, f, protocol=3)
+
 alice.print_salary_info()
+print(alice.phone)
