@@ -44,7 +44,9 @@ class Router():
             interface: string containing interface name (i.e. "eth01")
         """
         self.addresses[address] = interface
+        # Calculating address of network containing the interface address 
         connectednetwork = ipaddress.ip_interface(address).network
+        # Add directly connected network to route table
         self.routes[str(connectednetwork)] = address.split('/')[0]
     def delete_address(self, address):
         """ Deletes address from addresses dictionary.
@@ -53,6 +55,7 @@ class Router():
             address: string containing IP address in CIDR notation
         """
         self.addresses.pop(address)
+        # The routes through the deleted gateway are not accessible now.
         for route in self.routes:
             if self.routes[route] == address:
                 self.routes.pop(route)
@@ -64,19 +67,19 @@ class Router():
 
     def add_route(self, destination, gateway):
         """Adds route to network
-        
         Args: 
             destination: destination network address in CIDR notation
             gateway: address of gateway
-        
         Raises:
             ValueError: gateway is unreachable
         """
         gatewayaddress = ipaddress.ip_address(gateway)
+        # If gateway is reacheable add the route and return from method.
         for net in self.routes:
             if gatewayaddress in ipaddress.ip_network(net).hosts():
                 self.routes[destination] = gateway
                 return
+        # Raise the exception if gateway is not reacheable.
         raise ValueError("Gateway is unreacheable.")
 
     def delete_route(self, network):
