@@ -14,10 +14,10 @@
 
 #### Демонстрация:
 Запросы от клиента:
-![View from client]()
+![View from client](https://github.com/GiftWind/pythonhomeworks/blob/master/hw19/clients_console_view.jpg)
 
 Работа сервера :
-![Server console]()
+![Server console](https://github.com/GiftWind/pythonhomeworks/blob/master/hw19/server_console_view.jpg)
 Аналогичные записи в логе:
 > 2021-08-31 22:31:28
 Server started.
