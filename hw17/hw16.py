@@ -31,12 +31,13 @@ def getcoordinatesfromfile(file):
         longitude = parsetodec(coords[1])
     return f"{latitude},{longitude}"
 
-def print_answer():
+def main():
     coordinates = getcoordinatesfromfile('coordinates.txt')
     geolocator = Nominatim(user_agent="Homework16")
     location = geolocator.reverse(coordinates)
     print(f"Location: {location}")
     print(f"Google Maps URL: https://www.google.com/maps/search/?api=1&query={coordinates}")
 
+
 if __name__ == '__main__':
-    print_answer()
+    main()
