@@ -39,3 +39,55 @@ Add new address 10.10.10.10 for microsoft.com
 Request from ('127.0.0.1', 36130): microsoft.com
 microsoft.com was in hosts. Send 10.10.10.10 to ('127.0.0.1', 36130)
 ===============
+2021-09-03 21:05:44
+Server started.
+===============
+2021-09-03 21:08:15
+Server started.
+===============
+2021-09-03 21:08:28
+Request from ('127.0.0.1', 49034): goo
+goo was not found in hosts. Resolving...
+2021-09-03 21:25:55
+Server started.
+===============
+2021-09-03 21:26:04
+Request from ('127.0.0.1', 33832): google.com
+google.com was not found in hosts. Resolving...
+Add record for google.com: 74.125.205.138
+Send 74.125.205.138 to ('127.0.0.1', 33832)
+===============
+2021-09-03 21:26:11
+Request from ('127.0.0.1', 38666): microsoft.com
+microsoft.com was not found in hosts. Resolving...
+Add record for microsoft.com: 104.215.148.63
+Send 104.215.148.63 to ('127.0.0.1', 38666)
+===============
+2021-09-03 21:26:22
+Request from ('127.0.0.1', 49027): ADD google.com 228.228.228.228
+Add new address 228.228.228.228 for google.com
+===============
+2021-09-03 21:26:26
+Request from ('127.0.0.1', 52699): google.com
+google.com was in hosts. Send 228.228.228.228 to ('127.0.0.1', 52699)
+===============
+2021-09-03 21:35:51
+Server started.
+===============
+2021-09-03 21:35:58
+Request from ('127.0.0.1', 53190): google.com
+google.com was not found in hosts. Resolving...
+Add record for google.com: 74.125.205.101
+Send 74.125.205.101 to ('127.0.0.1', 53190)
+===============
+2021-09-03 21:36:03
+Request from ('127.0.0.1', 41312): go
+go was not found in hosts. Resolving...
+Hostname go unknown.
+===============
+2021-09-03 21:37:41
+Request from ('127.0.0.1', 33743): localhost
+localhost was not found in hosts. Resolving...
+Add record for localhost: 127.0.0.1
+Send 127.0.0.1 to ('127.0.0.1', 33743)
+===============
