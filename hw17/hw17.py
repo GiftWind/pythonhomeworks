@@ -24,6 +24,9 @@ def writecoordinates(photo):
 
 if __name__ == '__main__':
     # First argument is a path to image
-    photo = sys.argv[1]
-    writecoordinates(photo)
-    hw16.main()
+    try:
+        photo = sys.argv[1]
+        writecoordinates(photo)
+        hw16.main()
+    except IndexError:
+        print("Enter filename as an argument.")
